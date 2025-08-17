@@ -1,0 +1,8 @@
+{
+  "label": "docusaurus",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "docusaurusのチュートリアルを配置しています。"
+  }
+}
