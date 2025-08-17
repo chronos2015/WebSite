@@ -59,7 +59,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/chronos2015/WebSite',
+            'https://github.com/chronos2015/WebSite/blob/main/',
         },
         blog: {
           showReadingTime: true,
@@ -70,7 +70,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/chronos2015/WebSite',
+            'https://github.com/chronos2015/WebSite/blob/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -122,7 +122,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/docusaurus/intro',
               },
             ],
           },
