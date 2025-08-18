@@ -3,6 +3,7 @@
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "テキストで図形やグラフの構造を記述し、専用ツールで描画します。"
+    "slug": "/markup",
+    "description": " 「マークアップ言語とは、文書の構造や意味をタグで記述するための言語」です。"
   }
 }
