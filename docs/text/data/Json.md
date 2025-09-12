@@ -7,8 +7,6 @@ title: Json
 
 JSONは、JavaScript Object Notationの略で、軽量なデータ交換フォーマットです。人間にとっても読みやすく、機械にとっても解析しやすい形式が特徴で、Web APIのデータ送受信など、様々な場面で利用されています。
 
-{/* truncate */}
-
 ### JSONの基本的な書式ルール
 
 1.  **オブジェクトは中括弧 `{}` で囲む**
@@ -107,6 +105,30 @@ JSONは非常にシンプルなルールで構成されているため、初心�
 
 * **相互運用性の欠如**: JSONBはテキスト形式ではないため、送信側と受信側の両方がJSONBのエンコード・デコード処理を実装しなければなりません。ライブラリやプラットフォームが異なると、この処理がうまくいかない可能性があります。
 * **デバッグの困難さ**: バイナリデータは人間が直接読むことができません。そのため、通信中のエラーやデータ破損をデバッグするのが非常に困難になります。
+
+## EBNFによる表記例
+
+```pumld
+@startebnf
+json  = value ;
+value = array | object | NULL | TRUE | FALSE | NUMBER | STRING;
+array = "[", [ value, { ",", value } ], "]" ;
+object = "{", [ member, { ",", member } ], "}" ;
+NULL  = "n", "u", "l", "l" ;
+TRUE  = "t", "r", "u", "e" ;
+FALSE = "f", "a", "l", "s", "e" ;
+NUMBER = [ "-" ], INT, [ FRAC ], [ EXP ] ;
+STRING = '"', {CHARACTER}, '"' ;
+member = STRING, ":", STRING ;
+INT = "0" | DIGIT1-9 , { DIGIT } ;
+FRAC = "." , DIGIT , { DIGIT } ;
+EXP = ( "e" | "E" ) , [ "+" | "-" ] , DIGIT , { DIGIT } ;
+CHARACTER = ?%x20-21? | ?%x23-5B? | ?%x5D-10FFFF? | ( "\", ('"' | "\" | "/" | "b" | "f" | "n" | "r" | "t" | "u", HEX, HEX, HEX, HEX) ) ;
+DIGIT1-9 = "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+DIGIT = "0" | DIGIT1-9 ;
+HEX = digit | "A" | "B" | "C" | "D" | "E" | "F" ;
+@endebnf
+```
 
 ### まとめ
 
