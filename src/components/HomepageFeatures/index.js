@@ -4,32 +4,34 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'サービス',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        複雑な仕組みやルールを、専門的な視点からわかりやすく解説します。国際的なスタンダードや業界の
+        慣習も、実務に落とし込める形で整理しています。初めての方でも、必要な情報に迷わずアクセスでき
+        ます。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'ブログ',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        日々の気づきや、現場での実践から得た知見を記録しています。単なる読みものではなく、情報の背
+        景や文脈を掘り下げることで、理解の補助線として機能します。更新は不定期ですが、内容は濃密で
+        す。
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'ドキュメント',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        FAQではなく、必要な情報を簡潔にまとめた実用的な資料群です。操作方法や考え方の整理、よくあ
+        る質問への対応など、使う人の視点に立った構成を心がけています。随時更新・追加予定です。
       </>
     ),
   },

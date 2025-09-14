@@ -1,0 +1,9 @@
+{
+  "label": "業務向け",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "slug": "/work",
+    "description": "業務に関連するテキストのフォーマットなどについて解説します。"
+  }
+}
