@@ -19,7 +19,7 @@ function HomepageHeader() {
         <div className={styles.buttons} style={{display: 'none'}}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
+            to="/docs/docusaurus/intro">
             Docusaurus Tutorial - 5min ⏱️
           </Link>
         </div>
