@@ -3,8 +3,6 @@ slug: Yaml
 title: Yaml
 ---
 
-## Yamlの書式や書き方について簡単に解説して
-
 YAMLは、"YAML Ain't Markup Language"の略で、人間が読みやすいデータシリアライズ言語です。設定ファイルやデータ交換などによく使われます。
 
 ### YAMLの基本的な書き方

@@ -3,8 +3,6 @@ slug: Json
 title: Json
 ---
 
-## Jsonの書式や書き方について簡単に解説して
-
 JSONは、JavaScript Object Notationの略で、軽量なデータ交換フォーマットです。人間にとっても読みやすく、機械にとっても解析しやすい形式が特徴で、Web APIのデータ送受信など、様々な場面で利用されています。
 
 ### JSONの基本的な書式ルール

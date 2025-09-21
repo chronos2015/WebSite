@@ -3,8 +3,6 @@ slug: Spring Boot
 title: Spring Boot
 ---
 
-## Spring Bootについて
-
 Spring Bootは、JavaでWebアプリケーションやスタンドアロンアプリケーションを簡単に作成できるフレームワークです。設定作業を最小限に抑え、開発者がビジネスロジックに集中できるように設計されています。
 
 ---

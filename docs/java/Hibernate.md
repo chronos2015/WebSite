@@ -3,9 +3,6 @@ slug: Hibernate
 title: Hibernate
 ---
 
-## hibernateについて
-
-
 Hibernateは、Javaでリレーショナルデータベースを扱うための**ORM（Object-Relational Mapping）** フレームワークです。データベースのテーブルをJavaのオブジェクトとして扱うことを可能にし、SQL文を直接書かなくてもデータベース操作ができるようにします。
 
 ---

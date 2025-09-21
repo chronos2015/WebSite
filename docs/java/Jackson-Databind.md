@@ -3,8 +3,6 @@ slug: Jackson Databind
 title: Jackson Databind
 ---
 
-## Jackson DatabindとJackson Dataformat YAMLについて
-
 **Jackson Databind**は、JavaオブジェクトとJSONデータのシリアライズ・デシリアライズを可能にする、Jacksonライブラリの中核となるモジュールです。一方、**Jackson Dataformat YAML**は、Jackson Databindの機能を拡張し、JSONではなくYAML形式のデータを扱うための追加モジュールです。
 
 ***
