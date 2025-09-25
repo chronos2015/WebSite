@@ -1,5 +1,5 @@
 ---
-slug: PlantUML
+id: PlantUML
 title: PlantUML
 ---
 
@@ -196,6 +196,8 @@ BE --> DB : SQLクエリ
 [タスク3] starts at [タスク2]'s end
 @endgantt
 ```
+
+[詳細](/docs/text/diagram/PlantUML/Gantt)
 
 -----
 
