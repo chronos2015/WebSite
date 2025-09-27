@@ -416,7 +416,7 @@ project starts 2025/1/1
 projectscale daily zoom 2
 language ja
 [taskA] starts at 2025/1/2
-[taskA] on {person1} lasts 15 days
+[taskA] on {person1} lasts 14 days
 @endgant
 ```
 
@@ -432,7 +432,7 @@ project starts 2025/1/1
 projectscale daily zoom 2
 language ja
 [taskA] starts at 2025/1/2
-[taskA] on {person1} lasts 12 days
+[taskA] on {person1} lasts 11 days
 {person1} is off on 2025/1/5 to 2025/1/7
 @endgant
 ```
