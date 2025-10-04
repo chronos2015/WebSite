@@ -407,7 +407,7 @@ language ja
 タスクにリソースを割り当てることができます。
 
 ```
-[taskA] on {person1} lasts 30 days
+[taskA] on {person1} lasts 14 days
 ```
 
 ```pumld
@@ -417,6 +417,37 @@ projectscale daily zoom 2
 language ja
 [taskA] starts at 2025/1/2
 [taskA] on {person1} lasts 14 days
+@endgant
+```
+
+### 何%割り当てるか指定する場合
+
+```
+[taskA] on {person1:50%} lasts 7 days
+```
+
+```pumld
+@startgantt
+project starts 2025/1/1
+projectscale daily zoom 2
+language ja
+[taskA] starts at 2025/1/2
+[taskA] on {person1:50%} lasts 7 days
+@endgant
+```
+
+### 複数のリソースを割り当てる場合
+```
+[taskA] on {person1} {person2} lasts 28 days
+```
+
+```pumld
+@startgantt
+project starts 2025/1/1
+projectscale daily zoom 2
+language ja
+[taskA] starts at 2025/1/2
+[taskA] on {person1} {person2} lasts 28 days
 @endgant
 ```
 
