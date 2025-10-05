@@ -3,6 +3,30 @@ slug: Gantt
 title: ガントチャート
 ---
 
+## サンプル
+
+```
+@startgantt
+[タスク1] lasts 10 days
+[タスク2] lasts 5 days
+[タスク3] lasts 3 days
+
+[タスク2] starts at [タスク1]'s end
+[タスク3] starts at [タスク2]'s end
+@endgantt
+```
+
+```pumld
+@startgantt
+[タスク1] lasts 10 days
+[タスク2] lasts 5 days
+[タスク3] lasts 3 days
+
+[タスク2] starts at [タスク1]'s end
+[タスク3] starts at [タスク2]'s end
+@endgantt
+```
+
 ## 全体の設定
 
 ### プロジェクト開始日
@@ -598,6 +622,56 @@ colors
 @enduml
 ```
 
+### 本日の背景色を指定
+
+飽く迄、plantUMLで本日の日付、色を指定できるのみで、PlantUMLで本日の日付を取得させたり、それによって色を変更したりする機能はない。
+
+```
+today is 2025/1/15 and is colored in red
+```
+
+```pumld
+@startgantt
+project starts 2025/1/1
+language ja
+[taskA] starts at 2025/1/20
+[taskA] lasts 12 days
+today is 2025/1/15 and is colored in red
+@endgant
+```
+
+### 特定した日の色を指定
+
+```
+2025/01/10 is colored in salmon
+```
+
+```pumld
+@startgantt
+project starts 2025/1/1
+language ja
+[taskA] starts at 2025/1/20
+[taskA] lasts 12 days
+2025/01/10 is colored in salmon
+@endgant
+```
+
+### 特定した期間の色を指定
+
+```
+2025/01/05 to 2025/01/10 are colored in lightblue
+```
+
+```pumld
+@startgantt
+project starts 2025/1/1
+language ja
+[taskA] starts at 2025/1/20
+[taskA] lasts 12 days
+2025/01/05 to 2025/01/10 are colored in lightblue
+@endgant
+```
+
 ## ノート
 
 ノートを定義できます。
@@ -618,6 +692,10 @@ note bottom
 end note
 @endgant
 ```
+
+:::danger
+注意: 他の機能では、left right topも指定できますがガントチャートに限っては不可の様です。
+:::
 
 ## 行コメント
 

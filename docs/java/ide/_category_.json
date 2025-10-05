@@ -1,0 +1,9 @@
+{
+  "label": "統合開発環境(IDE)",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "slug": "/ide",
+    "description": "Javaのパッケージに関する情報をまとめています。サードパーティ製のライブラリ、フレームワークなど、さまざまなパッケージについて解説します。"
+  }
+}

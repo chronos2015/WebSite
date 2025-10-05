@@ -1,8 +1,8 @@
 {
-  "label": "java",
+  "label": "Python",
   "position": 4,
   "link": {
     "type": "doc",
-    "id": "java"
+    "id": "Python"
   }
 }

@@ -1,30 +1,16 @@
 ---
 id: PlantUML
-title: PlantUML
+title: PlantUMLで描ける図表の種類とサンプル
 ---
 
-## plantUMLで描ける図表をサンプルを一覧表示して
+PlantUMLでは、テキスト形式でさまざまな種類のUML図や、UML以外のダイアグラムを描くことができます。<br />
+以下に主要な図表の種類と、それぞれの簡単なサンプルコードを一覧でご紹介します。
 
------
+---
 
-## PlantUMLで描ける図表の種類とサンプル
-
-PlantUMLでは、テキスト形式でさまざまな種類のUML図や、UML以外のダイアグラムを描くことができます。以下に主要な図表の種類と、それぞれの簡単なサンプルコードを一覧でご紹介します。
-
-### 1\. シーケンス図 (Sequence Diagram)
+## シーケンス図 (Sequence Diagram)
 
 オブジェクト間のメッセージのやり取りを時系列で表現する図です。
-
-**サンプルコード**
-
-```
-@startuml
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
-Alice -> Bob: Another Request
-Alice <-- Bob: Another Response
-@enduml
-```
 
 ```pumld
 @startuml
@@ -35,7 +21,9 @@ Alice <-- Bob: Another Response
 @enduml
 ```
 
-### 2\. ユースケース図 (Use Case Diagram)
+[詳細](/docs/text/diagram/PlantUML/Sequence)
+
+## ユースケース図 (Use Case Diagram)
 
 システムの機能を**ユースケース**として表現し、それに関わる**アクター**（利用者や外部システム）との関係を示す図です。
 
@@ -75,7 +63,7 @@ customer --> review
 @enduml
 ```
 
-### 3\. クラス図 (Class Diagram)
+## クラス図 (Class Diagram)
 
 クラス、インターフェース、属性、操作、そしてそれらの関係を静的に表現する図です。
 
@@ -103,7 +91,7 @@ A --> C : associates
 @enduml
 ```
 
-### 4\. アクティビティ図 (Activity Diagram)
+## アクティビティ図 (Activity Diagram)
 
 処理の流れやワークフローを表現する図です。フローチャートに近い感覚で使えます。
 
@@ -141,7 +129,7 @@ stop
 
 -----
 
-### 5\. コンポーネント図 (Component Diagram)
+## コンポーネント図 (Component Diagram)
 
 システムのコンポーネントとその依存関係を表現する図です。
 
@@ -169,22 +157,9 @@ BE --> DB : SQLクエリ
 @enduml
 ```
 
-### 6\. ガントチャート (Gantt Chart)
+## ガントチャート (Gantt Chart)
 
 プロジェクトのスケジュール管理などに用いられる、タスクの期間と依存関係を視覚的に表現する図です。
-
-**サンプルコード**
-
-```
-@startgantt
-[タスク1] lasts 10 days
-[タスク2] lasts 5 days
-[タスク3] lasts 3 days
-
-[タスク2] starts at [タスク1]'s end
-[タスク3] starts at [タスク2]'s end
-@endgantt
-```
 
 ```pumld
 @startgantt
@@ -201,7 +176,7 @@ BE --> DB : SQLクエリ
 
 -----
 
-### 7\. マインドマップ (MindMap)
+## マインドマップ (MindMap)
 
 アイデアを整理したり、思考を視覚化したりするのに役立つ図です。
 
@@ -227,7 +202,7 @@ BE --> DB : SQLクエリ
 @endmindmap
 ```
 
-### 8\. ER図 (Entity-Relationship Diagram)
+## ER図 (Entity-Relationship Diagram)
 
 データベースのエンティティ（実体）と、それらの間の関係を表現する図です。
 
@@ -249,7 +224,7 @@ product ||--o{ order_item : lists
 @enduml
 ```
 
-### 9\.状態遷移図 (State Diagram)
+## 状態遷移図 (State Diagram)
 
 オブジェクトが時間経過やイベントに応じて状態を変化させる様子を表現する図です。システムの挙動を詳細に分析する際に役立ちます。
 
@@ -281,7 +256,7 @@ Sleeping --> Idle : wake up
 
 -----
 
-### 10\.オブジェクト図 (Object Diagram)
+## オブジェクト図 (Object Diagram)
 
 特定の時点でのシステム内のオブジェクトとその関係を表現する図です。クラス図とは異なり、具体的なインスタンスと値を記述します。
 
@@ -327,7 +302,7 @@ car -- house : is owned by
 
 -----
 
-### 11\.配備図 (Deployment Diagram)
+## 配備図 (Deployment Diagram)
 
 システムのハードウェアとソフトウェアの物理的な配置（デプロイメント）を表現する図です。サーバー、ネットワーク、データベースなどの関係を示します。
 
@@ -376,7 +351,7 @@ BE --> "MySQL" : JDBC
 
 -----
 
-### 12\.ワイヤーフレーム (Wireframe)
+## ワイヤーフレーム (Wireframe)
 
 Webページやアプリケーションの画面レイアウトを簡易的に表現する図です。UIの骨組みや配置を素早く共有するのに適しています。
 

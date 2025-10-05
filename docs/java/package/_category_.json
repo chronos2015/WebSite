@@ -1,0 +1,9 @@
+{
+  "label": "パッケージ",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "slug": "/package",
+    "description": "Javaのパッケージに関する情報をまとめています。サードパーティ製のライブラリ、フレームワークなど、さまざまなパッケージについて解説します。"
+  }
+}
