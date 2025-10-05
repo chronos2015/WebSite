@@ -614,3 +614,8 @@ control コントロール
 注意: ただし、行頭以外に`/*`を置いた場合にブロックコメントとして認識されないようです。<br />
 また行の途中で`*/`を記載してもその行の最後までブロックコメントとして処理されるようです。
 :::
+
+## 参照
+
+[https://zenn.dev/kitabatake/articles/006ca2947f309a074939](https://zenn.dev/kitabatake/articles/006ca2947f309a074939)
+[https://qiita.com/TsuSho/items/8b91c0056e3e74bc8120](https://qiita.com/TsuSho/items/8b91c0056e3e74bc8120)

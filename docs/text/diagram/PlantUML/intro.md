@@ -387,4 +387,59 @@ Webページやアプリケーションの画面レイアウトを簡易的に�
 @endwbs
 ```
 
+## タイミング図 (Timing Diagram)
+
+時間軸に沿ったイベントの発生タイミングを表現する図です。
+
+**サンプルコード:**
+
+
+```
+@startuml
+Title タイミングチャート例
+robust "スイッチ" as Switch
+robust "ランプ" as Lamp
+robust "モーター" as Motor
+Switch is OFF
+Lamp is OFF
+Motor is STOPPED
+
+@0
+Switch -> Lamp : ON信号
+Lamp is ON
+
+@10
+Lamp -> Motor : START信号
+Motor is RUNNING
+
+@20
+Motor -> Lamp : STOP信号
+Lamp is OFF
+@enduml
+```
+
+```pumld
+@startuml
+Title タイミングチャート例
+robust "スイッチ" as Switch
+robust "ランプ" as Lamp
+robust "モーター" as Motor
+Switch is OFF
+Lamp is OFF
+Motor is STOPPED
+
+@0
+Switch -> Lamp : ON信号
+Lamp is ON
+
+@10
+Lamp -> Motor : START信号
+Motor is RUNNING
+
+@20
+Motor -> Lamp : STOP信号
+Lamp is OFF
+@enduml
+```
+
 これら以外にも、PlantUMLは様々な図表をサポートしています。PlantUMLの公式ドキュメントで、より詳細な情報や豊富なサンプルを確認できます。
