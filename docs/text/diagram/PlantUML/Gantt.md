@@ -3,6 +3,8 @@ slug: Gantt
 title: ガントチャート
 ---
 
+(Gantt Chart)
+
 ## サンプル
 
 ```

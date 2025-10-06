@@ -8,6 +8,86 @@ PlantUMLでは、テキスト形式でさまざまな種類のUML図や、UML以
 
 ---
 
+## アクティビティ図 (Activity Diagram)
+
+処理の流れやワークフローを表現する図です。フローチャートに近い感覚で使えます。
+
+```pumld
+@startuml
+start
+:Webサイトへアクセス;
+if (ログイン済みか？) then (yes)
+    :商品ページへ移動;
+else (no)
+    :ログインページへ;
+    :ログイン;
+endif
+:商品をカートに入れる;
+stop
+@enduml
+```
+
+[詳細](/docs/text/diagram/PlantUML/Activity)
+
+-----
+
+## クラス図 (Class Diagram)
+
+クラス、インターフェース、属性、操作、そしてそれらの関係を静的に表現する図です。
+
+```pumld
+@startuml
+class A
+class B
+class C
+
+A --|> B : extends
+A --> C : associates
+@enduml
+```
+
+[詳細](/docs/text/diagram/PlantUML/Class)
+
+-----
+
+## コンポーネント図 (Component Diagram)
+
+システムのコンポーネントとその依存関係を表現する図です。
+
+```pumld
+@startuml
+[データベース] as DB
+[バックエンド] as BE
+[フロントエンド] as FE
+
+FE --> BE : HTTPリクエスト
+BE --> DB : SQLクエリ
+@enduml
+```
+
+[詳細](/docs/text/diagram/PlantUML/Component)
+
+-----
+
+## ガントチャート (Gantt Chart)
+
+プロジェクトのスケジュール管理などに用いられる、タスクの期間と依存関係を視覚的に表現する図です。
+
+```pumld
+@startgantt
+[タスク1] lasts 10 days
+[タスク2] lasts 5 days
+[タスク3] lasts 3 days
+
+[タスク2] starts at [タスク1]'s end
+[タスク3] starts at [タスク2]'s end
+@endgantt
+```
+
+[詳細](/docs/text/diagram/PlantUML/Gantt)
+
+-----
+
 ## シーケンス図 (Sequence Diagram)
 
 オブジェクト間のメッセージのやり取りを時系列で表現する図です。
@@ -63,118 +143,8 @@ customer --> review
 @enduml
 ```
 
-## クラス図 (Class Diagram)
-
-クラス、インターフェース、属性、操作、そしてそれらの関係を静的に表現する図です。
-
-**サンプルコード**
-
-```
-@startuml
-class A
-class B
-class C
-
-A --|> B : extends
-A --> C : associates
-@enduml
-```
-
-```pumld
-@startuml
-class A
-class B
-class C
-
-A --|> B : extends
-A --> C : associates
-@enduml
-```
-
-## アクティビティ図 (Activity Diagram)
-
-処理の流れやワークフローを表現する図です。フローチャートに近い感覚で使えます。
-
-**サンプルコード**
-
-```
-@startuml
-start
-:Webサイトへアクセス;
-if (ログイン済みか？) then (yes)
-    :商品ページへ移動;
-else (no)
-    :ログインページへ;
-    :ログイン;
-endif
-:商品をカートに入れる;
-stop
-@enduml
-```
-
-```pumld
-@startuml
-start
-:Webサイトへアクセス;
-if (ログイン済みか？) then (yes)
-    :商品ページへ移動;
-else (no)
-    :ログインページへ;
-    :ログイン;
-endif
-:商品をカートに入れる;
-stop
-@enduml
-```
-
 -----
 
-## コンポーネント図 (Component Diagram)
-
-システムのコンポーネントとその依存関係を表現する図です。
-
-**サンプルコード**
-
-```
-@startuml
-[データベース] as DB
-[バックエンド] as BE
-[フロントエンド] as FE
-
-FE --> BE : HTTPリクエスト
-BE --> DB : SQLクエリ
-@enduml
-```
-
-```pumld
-@startuml
-[データベース] as DB
-[バックエンド] as BE
-[フロントエンド] as FE
-
-FE --> BE : HTTPリクエスト
-BE --> DB : SQLクエリ
-@enduml
-```
-
-## ガントチャート (Gantt Chart)
-
-プロジェクトのスケジュール管理などに用いられる、タスクの期間と依存関係を視覚的に表現する図です。
-
-```pumld
-@startgantt
-[タスク1] lasts 10 days
-[タスク2] lasts 5 days
-[タスク3] lasts 3 days
-
-[タスク2] starts at [タスク1]'s end
-[タスク3] starts at [タスク2]'s end
-@endgantt
-```
-
-[詳細](/docs/text/diagram/PlantUML/Gantt)
-
------
 
 ## マインドマップ (MindMap)
 
