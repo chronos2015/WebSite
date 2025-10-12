@@ -37,6 +37,104 @@ stop
 @enduml
 ```
 
+## 全体の設定
+
+### タイトル
+
+タイトルを定義できます。
+
+```
+title 新基盤構築計画
+```
+
+```pumld
+@startuml
+title 新基盤構築計画
+start
+:Webサイトへアクセス;
+if (ログイン済みか？) then (yes)
+    :商品ページへ移動;
+else (no)
+    :ログインページへ;
+    :ログイン;
+endif
+:商品をカートに入れる;
+stop
+@enduml
+```
+
+### ヘッダ
+
+ヘッダを定義できます。
+
+```
+header 新基盤構築計画
+```
+
+```pumld
+@startuml
+header 新基盤構築計画
+start
+:Webサイトへアクセス;
+if (ログイン済みか？) then (yes)
+    :商品ページへ移動;
+else (no)
+    :ログインページへ;
+    :ログイン;
+endif
+:商品をカートに入れる;
+stop
+@enduml
+```
+
+### フッタ
+
+フッタを定義できます。
+
+```
+footer フッタ
+```
+
+```pumld
+@startuml
+footer フッタ
+start
+:Webサイトへアクセス;
+if (ログイン済みか？) then (yes)
+    :商品ページへ移動;
+else (no)
+    :ログインページへ;
+    :ログイン;
+endif
+:商品をカートに入れる;
+stop
+@enduml
+```
+
+### キャプション
+
+キャプションを定義できます。
+
+```
+caption キャプション
+```
+
+```pumld
+@startuml
+caption キャプション
+start
+:Webサイトへアクセス;
+if (ログイン済みか？) then (yes)
+    :商品ページへ移動;
+else (no)
+    :ログインページへ;
+    :ログイン;
+endif
+:商品をカートに入れる;
+stop
+@enduml
+```
+
 ## 開始点
 
 ```

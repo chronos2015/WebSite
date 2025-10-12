@@ -3,7 +3,7 @@
   "position": 1,
   "link": {
     "type": "generated-index",
-    "slug": "/data",
+    "slug": "/text/data",
     "description": "行と列からなるシンプルな表形式のデータ、親子関係を持つツリー構造や、キーと値のペアでデータを表現します。"
   }
 }

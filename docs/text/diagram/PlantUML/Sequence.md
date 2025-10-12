@@ -43,6 +43,60 @@ Alice <-- Bob: Another Response
 @enduml
 ```
 
+### ヘッダ
+
+ヘッダを定義できます。
+
+```
+header 新基盤構築計画
+```
+
+```pumld
+@startuml
+header 新基盤構築計画
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+Alice -> Bob: Another Request
+Alice <-- Bob: Another Response
+@enduml
+```
+
+### フッタ
+
+フッタを定義できます。
+
+```
+footer フッタ
+```
+
+```pumld
+@startuml
+footer フッタ
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+Alice -> Bob: Another Request
+Alice <-- Bob: Another Response
+@enduml
+```
+
+### キャプション
+
+キャプションを定義できます。
+
+```
+caption キャプション
+```
+
+```pumld
+@startuml
+caption キャプション
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+Alice -> Bob: Another Request
+Alice <-- Bob: Another Response
+@enduml
+```
+
 ### 下部エリア非表示
 
 ```
@@ -621,5 +675,4 @@ control コントロール
 
 [https://zenn.dev/kitabatake/articles/006ca2947f309a074939](https://zenn.dev/kitabatake/articles/006ca2947f309a074939)
 
-[https://qiita.com/TsuSho/items/8b91c0056e3e74bc8120](https://qiita.com/TsuSho/items/
-8b91c0056e3e74bc8120)
+[https://qiita.com/TsuSho/items/8b91c0056e3e74bc8120](https://qiita.com/TsuSho/items/8b91c0056e3e74bc8120)

@@ -29,6 +29,88 @@ BE --> DB : SQLクエリ
 @enduml
 ```
 
+## 全体の設定
+
+### タイトル
+
+タイトルを定義できます。
+
+```
+title 新基盤構築計画
+```
+
+```pumld
+@startuml
+title 新基盤構築計画
+[データベース] as DB
+[バックエンド] as BE
+[フロントエンド] as FE
+
+FE --> BE : HTTPリクエスト
+BE --> DB : SQLクエリ
+@enduml
+```
+
+### ヘッダ
+
+ヘッダを定義できます。
+
+```
+header 新基盤構築計画
+```
+
+```pumld
+@startuml
+header 新基盤構築計画
+[データベース] as DB
+[バックエンド] as BE
+[フロントエンド] as FE
+
+FE --> BE : HTTPリクエスト
+BE --> DB : SQLクエリ
+@enduml
+```
+
+### フッタ
+
+フッタを定義できます。
+
+```
+footer フッタ
+```
+
+```pumld
+@startuml
+footer フッタ
+[データベース] as DB
+[バックエンド] as BE
+[フロントエンド] as FE
+
+FE --> BE : HTTPリクエスト
+BE --> DB : SQLクエリ
+@enduml
+```
+
+### キャプション
+
+キャプションを定義できます。
+
+```
+caption キャプション
+```
+
+```pumld
+@startuml
+caption キャプション
+[データベース] as DB
+[バックエンド] as BE
+[フロントエンド] as FE
+
+FE --> BE : HTTPリクエスト
+BE --> DB : SQLクエリ
+@enduml
+```
+
 ## コンポーネント
 
 `[]`で囲むか、`component`に続けてコンポーネント名を記載する事でコンポーネントを定義できます。
@@ -138,6 +220,8 @@ package "パッケージ名" {
 ```
 
 ## ノート
+
+### 左側
 
 ```
 note left : ノート

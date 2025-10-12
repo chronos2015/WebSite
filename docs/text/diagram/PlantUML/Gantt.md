@@ -683,6 +683,7 @@ note bottom
 ノートの内容
 end note
 ```
+
 ```pumld
 @startgantt
 project starts 2025/1/1

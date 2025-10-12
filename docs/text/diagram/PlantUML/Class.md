@@ -465,6 +465,86 @@ end note
 
 ## 全体の設定
 
+### タイトル
+
+タイトルを定義できます。
+
+```
+title 新基盤構築計画
+```
+
+```pumld
+@startuml
+title 新基盤構築計画
+class A
+class B
+class C
+
+A --|> B : extends
+A --> C : associates
+@enduml
+```
+
+### ヘッダ
+
+ヘッダを定義できます。
+
+```
+header 新基盤構築計画
+```
+
+```pumld
+@startuml
+header 新基盤構築計画
+class A
+class B
+class C
+
+A --|> B : extends
+A --> C : associates
+@enduml
+```
+
+### フッタ
+
+フッタを定義できます。
+
+```
+footer フッタ
+```
+
+```pumld
+@startuml
+footer フッタ
+class A
+class B
+class C
+
+A --|> B : extends
+A --> C : associates
+@enduml
+```
+
+### キャプション
+
+キャプションを定義できます。
+
+```
+caption キャプション
+```
+
+```pumld
+@startuml
+caption キャプション
+class A
+class B
+class C
+
+A --|> B : extends
+A --> C : associates
+@enduml
+```
+
 ### 空のフィールド／メソッドを省略
 
 ```

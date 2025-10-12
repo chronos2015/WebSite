@@ -3,7 +3,7 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "slug": "/diagram",
+    "slug": "/text/diagram",
     "description": "テキストに意味付けや装飾を施し、構造化されたドキュメントを作成します。"
   }
 }

@@ -68,6 +68,26 @@ BE --> DB : SQLクエリ
 [詳細](/docs/text/diagram/PlantUML/Component)
 
 -----
+ 
+## ER図 (Entity-Relationship Diagram)
+
+データベースのエンティティ（実体）と、それらの間の関係を表現する図です。
+
+```pumld
+@startuml
+entity customer
+entity order
+entity product
+entity order_item
+customer ||--o{ order : places
+order ||--o{ order_item : contains
+product ||--o{ order_item : lists
+@enduml
+```
+
+[詳細](/docs/text/diagram/PlantUML/Entity)
+
+-----
 
 ## ガントチャート (Gantt Chart)
 
@@ -85,6 +105,24 @@ BE --> DB : SQLクエリ
 ```
 
 [詳細](/docs/text/diagram/PlantUML/Gantt)
+
+-----
+
+## マインドマップ (MindMap)
+
+アイデアを整理したり、思考を視覚化したりするのに役立つ図です。
+
+```pumld
+@startmindmap
+* ルートノード
+** 子ノード1
+*** さらに下のノード
+** 子ノード2
+*** 別のノード
+@endmindmap
+```
+
+[詳細](/docs/text/diagram/PlantUML/MindMap)
 
 -----
 
@@ -107,25 +145,6 @@ Alice <-- Bob: Another Response
 
 システムの機能を**ユースケース**として表現し、それに関わる**アクター**（利用者や外部システム）との関係を示す図です。
 
-**サンプルコード**
-
-```
-@startuml
-left to right direction
-actor "顧客" as customer
-rectangle "ECサイト" {
-    usecase "商品を検索する" as search
-    usecase "注文する" as order
-    usecase "支払いをする" as pay
-    usecase "レビューを書く" as review
-}
-customer --> search
-customer --> order
-customer --> pay
-customer --> review
-@enduml
-```
-
 ```pumld
 @startuml
 left to right direction
@@ -142,57 +161,10 @@ customer --> pay
 customer --> review
 @enduml
 ```
+
+[詳細](/docs/text/diagram/PlantUML/UseCase)
 
 -----
-
-
-## マインドマップ (MindMap)
-
-アイデアを整理したり、思考を視覚化したりするのに役立つ図です。
-
-**サンプルコード**
-
-```
-@startmindmap
-* ルートノード
-** 子ノード1
-*** さらに下のノード
-** 子ノード2
-*** 別のノード
-@endmindmap
-```
-
-```pumld
-@startmindmap
-* ルートノード
-** 子ノード1
-*** さらに下のノード
-** 子ノード2
-*** 別のノード
-@endmindmap
-```
-
-## ER図 (Entity-Relationship Diagram)
-
-データベースのエンティティ（実体）と、それらの間の関係を表現する図です。
-
-**サンプルコード**
-
-```
-@startuml
-customer ||--o{ order : places
-order ||--o{ order_item : contains
-product ||--o{ order_item : lists
-@enduml
-```
-
-```pumld
-@startuml
-customer ||--o{ order : places
-order ||--o{ order_item : contains
-product ||--o{ order_item : lists
-@enduml
-```
 
 ## 状態遷移図 (State Diagram)
 
