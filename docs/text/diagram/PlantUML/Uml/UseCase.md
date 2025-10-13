@@ -143,6 +143,27 @@ customer --> review
 @enduml
 ```
 
+#### すべて組み合わせると...
+
+```pumld
+@startuml
+header 新基盤構築計画
+title 新基盤構築計画
+caption キャプション
+footer フッタ
+actor "顧客" as customer
+rectangle "ECサイト" {
+    usecase "商品を検索する" as search
+    usecase "注文する" as order
+    usecase "支払いをする" as pay
+    usecase "レビューを書く" as review
+}
+customer --> search
+customer --> order
+customer --> pay
+customer --> review
+```
+
 ### レイアウト方向の指定
 
 ```

@@ -1,14 +1,12 @@
 ---
-slug: mermaid
-title: mermaid.js
+id: mermaid.js
+title: mermaid.jsで記載できる全種類の図形とサンプル
 ---
-
-## mermaid.jsで記載できる全種類の図形とサンプルをください
 
 mermaid.jsでは、フローチャート、シーケンス図、クラス図、ステート図、ガントチャート、円グラフなど、さまざまな種類の図形を作成できます。<br />
 ここでは、mermaid.jsで記述できる主な図形の種類と、それぞれの簡単なサンプルコードをご紹介します。
 
-### 1\. フローチャート (flowchart)
+## フローチャート (flowchart)
 
 プロセスやタスクの流れを視覚的に表現するのに使われます。
 
@@ -30,21 +28,11 @@ graph TD
     D --> E;
 ```
 
------
+---
 
-### 2\. シーケンス図 (sequenceDiagram)
+## シーケンス図 (Sequence Diagram)
 
 システムやプログラムのコンポーネント間で、メッセージがどのような順序でやりとりされるかを示します。
-
-```
-sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->>Bob: こんにちは
-    activate Bob
-    Bob-->>Alice: こんにちは、Aliceさん
-    deactivate Bob
-```
 
 ```mermaid
 sequenceDiagram
@@ -56,9 +44,11 @@ sequenceDiagram
     deactivate Bob
 ```
 
------
+[詳細](/docs/text/diagram/Mermaid.js/Sequence)
 
-### 3\. クラス図 (classDiagram)
+---
+
+## クラス図 (classDiagram)
 
 オブジェクト指向プログラミングにおけるクラス、属性、メソッド、およびそれらの関係を図示します。
 
@@ -90,9 +80,9 @@ classDiagram
     Animal <|-- Dog
 ```
 
------
+---
 
-### 4\. ステート図 (stateDiagram-v2)
+## ステート図 (stateDiagram-v2)
 
 オブジェクトのライフサイクルにおける状態遷移を表現します。
 
@@ -110,9 +100,9 @@ stateDiagram-v2
     On --> Off: ボタンをもう一度押す
 ```
 
------
+---
 
-### 5\. ガントチャート (gantt)
+## ガントチャート (gantt)
 
 プロジェクトのスケジュール管理に使われ、各タスクの開始日、終了日、期間を視覚的に示します。
 
@@ -136,9 +126,9 @@ gantt
     実装          :         des3, 2024-01-21, 2024-02-15
 ```
 
------
+---
 
-### 6\. 円グラフ (pie)
+## 円グラフ (pie)
 
 データの比率を円形で表示します。
 
@@ -160,9 +150,9 @@ pie
     "その他" : 10
 ```
 
------
+---
 
-### 7\. ユーザー旅程図 (journey)
+## ユーザー旅程図 (journey)
 
 ユーザーがサービスや製品を利用する際の、一連の行動や感情の変化を視覚化します。
 
@@ -190,9 +180,9 @@ journey
       Sit down: 5: Me
 ```
 
------
+---
 
-### 8\. ER図 (erDiagram)
+## ER図 (erDiagram)
 
 データベースのエンティティ（実体）、属性、およびそれらの関係を図示します。
 
@@ -232,9 +222,9 @@ erDiagram
     }
 ```
 
------
+---
 
-### 9\. gitグラフ (gitGraph)
+## gitグラフ (gitGraph)
 
 Gitのブランチ、コミット、マージなどの操作を視覚的に表現します。
 
@@ -264,9 +254,9 @@ gitGraph
     commit
 ```
 
------
+---
 
-### 10\. マインドマップ (mindmap)
+## マインドマップ (mindmap)
 
 アイデアや概念の階層的な関連性を表現します。
 
@@ -300,9 +290,9 @@ mindmap
       - サブトピック3-2
 ```
 
------
+---
 
-### 11\. パケット図 (packet)
+## パケット図 (packet)
 
 ネットワークパケットの構造を視覚的に表現します。
 
@@ -354,9 +344,9 @@ packet
 192-255: "Data (variable length)"
 ```
 
------
+---
 
-### 12\. タイムライン (Timeline)
+## タイムライン (Timeline)
 
 イベントの時系列を表現します。
 
@@ -382,7 +372,7 @@ timeline
 
 -----
 
-### 13\. かんばん図 (kanban)
+## かんばん図 (kanban)
 
 かんばん図は、タスクの進捗状況を「Todo」「進行中」「完了」といった列で視覚化するのに使います。
 
@@ -438,9 +428,9 @@ kanban
     id3[Weird flickering in Firefox]
 ```
 
------
+---
 
-### 14\. ブロック図 (block-beta)
+## ブロック図 (block-beta)
 
 システムの構成要素（ブロック）とその接続を表現します。
 
@@ -478,9 +468,9 @@ columns 1
   style B fill:#969,stroke:#333,stroke-width:4px
 ```
 
------
+---
 
-### 15\. C4モデル (C4-Model)
+## C4モデル (C4-Model)
 
 ソフトウェアシステムの構造を階層的に表現します。
 
@@ -556,7 +546,9 @@ C4Context
     Rel(SystemC, customerA, "Sends e-mails to")
 ```
 
-### 16\. クワドラントチャート (Quadrant Chart)
+---
+
+## クワドラントチャート (Quadrant Chart)
 
 2つの軸でデータを4つの象限に分類して表現します。
 
@@ -594,7 +586,9 @@ quadrantChart
     Campaign F: [0.35, 0.78]
 ```
 
-### 17\.アーキテクチャ図 (Architecture)
+---
+
+## アーキテクチャ図 (Architecture)
 
 アーキテクチャ図は、ソフトウェアシステムの構造や構成要素、それらの関係性を可視化する図です。
 
@@ -626,9 +620,9 @@ architecture-beta
     disk2:T -- B:db
 ```
 
------
+---
 
-### 18\.レーダーチャート (Radar)
+## レーダーチャート (Radar)
 
 レーダーチャートは、複数の項目を比較して評価するのに適した図です。
 
@@ -662,7 +656,7 @@ radar-beta
 
 -----
 
-### 19\.要件図 (Requirement)
+## 要件図 (Requirement)
 
 要件図は、システムやソフトウェアの要件を階層的に整理・可視化する図です。
 
@@ -700,9 +694,9 @@ requirementDiagram
     test_entity - satisfies -> test_req
 ```
 
------
+---
 
-### 20\.サンキー図 (Sankey)
+## サンキー図 (Sankey)
 
 サンキーダイアグラムは、エネルギーや資源、資金などの流れの量を可視化するのに特化した図です。
 
@@ -750,9 +744,9 @@ District heating,Industry,10.639
 District heating,Heating and cooling - commercial,22.505
 ```
 
------
+---
 
-### 21\.ツリーマップ (Treemap)
+## ツリーマップ (Treemap)
 
 ツリーマップは、階層的なデータを長方形の入れ子構造で表現する図です。
 
@@ -778,9 +772,9 @@ treemap-beta
     "Leaf 2.2": 25
 ```
 
------
+---
 
-### 22\.散布図 (XY)
+## 散布図 (XY)
 
 XYプロット（散布図）は、2つの変数間の関係性を可視化する図です。
 
@@ -802,9 +796,9 @@ xychart-beta
     line [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
 ```
 
------
+---
 
-### 23\.ZenUML図 (ZenUML)
+## ZenUML図 (ZenUML)
 
 ZenUML図は、UML（統一モデリング言語）のシーケンス図を、よりシンプルで直感的な構文で表現するための図です。
 :::warning

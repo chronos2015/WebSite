@@ -135,6 +135,26 @@ stop
 @enduml
 ```
 
+#### すべて組み合わせると...
+
+```pumld
+title 新基盤構築計画
+header 新基盤構築計画
+footer フッタ
+caption キャプション
+start
+:Webサイトへアクセス;
+if (ログイン済みか？) then (yes)
+    :商品ページへ移動;
+else (no)
+    :ログインページへ;
+    :ログイン;
+endif
+:商品をカートに入れる;
+stop
+@enduml
+```
+
 ## 開始点
 
 ```

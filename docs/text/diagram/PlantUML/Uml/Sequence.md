@@ -97,6 +97,20 @@ Alice <-- Bob: Another Response
 @enduml
 ```
 
+#### すべて組み合わせると...
+
+```pumld
+@startuml
+header 新基盤構築計画
+title 新基盤構築計画
+caption キャプション
+footer フッタ
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+Alice -> Bob: Another Request
+Alice <-- Bob: Another Response
+```
+
 ### 下部エリア非表示
 
 ```
@@ -217,6 +231,7 @@ participant 参加者
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
 ユーザー -> コントロール : 同期メッセージ
@@ -230,6 +245,7 @@ control コントロール
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
 ユーザー ->> コントロール : 非同期メッセージ
@@ -243,6 +259,7 @@ control コントロール
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
 ユーザー -->> コントロール : リプライメッセージ
@@ -256,6 +273,7 @@ control コントロール
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
 ユーザー -> ユーザー
@@ -269,6 +287,7 @@ control コントロール
 ```
 
 ```pumld
+@startuml
 control コントロール
 コントロール ->] : 外部へのメッセージ
 @enduml
@@ -281,6 +300,7 @@ control コントロール
 ```
 
 ```pumld
+@startuml
 control コントロール
 [-> コントロール : 外部からのメッセージ
 @enduml
@@ -295,14 +315,6 @@ create コントロール
 ユーザー -> 生成メッセージ
 ```
 
-```pumld
-actor ユーザー
-control コントロール
-create コントロール
-ユーザー -> コントロール : 生成メッセージ
-@enduml
-```
-
 ### 破棄
 
 ```
@@ -311,94 +323,13 @@ destroy コントロール
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
+create コントロール
+ユーザー -> コントロール : 生成メッセージ
 ユーザー -> コントロール : 破棄メッセージ
 destroy コントロール
-@enduml
-```
-
-## ノート
-
-ノートを定義できます。
-
-### 左側
-
-```
-note left
-ノート
-end note
-```
-
-```pumld
-actor ユーザー
-control コントロール
-ユーザー -> コントロール : 同期メッセージ
-note left
-ノート
-end note
-@enduml
-```
-
-### 右側
-
-```
-note right
-ノート
-end note
-```
-
-```pumld
-actor ユーザー
-control コントロール
-ユーザー -> コントロール : 同期メッセージ
-note right
-ノート
-end note
-@enduml
-```
-
-### 上側
-
-:::warning
-一応定義出来るものの無視されてるみたいだ。
-:::
-
-```
-note top
-ノート
-end note
-```
-
-```pumld
-actor ユーザー
-control コントロール
-ユーザー -> コントロール : 同期メッセージ
-note top
-ノート
-end note
-@enduml
-```
-
-### 下側
-
-:::warning
-一応定義出来るものの無視されてるみたいだ。
-:::
-
-```
-note bottom
-ノート
-end note
-```
-
-```pumld
-actor ユーザー
-control コントロール
-ユーザー -> コントロール : 同期メッセージ
-note bottom
-ノート
-end note
 @enduml
 ```
 
@@ -411,6 +342,7 @@ activate コントロール
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
 ユーザー -> コントロール
@@ -426,6 +358,7 @@ deactivate  コントロール
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
 ユーザー -> コントロール
@@ -450,6 +383,7 @@ end
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
 alt x > 0
@@ -469,6 +403,7 @@ end
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
 opt x > 0
@@ -488,6 +423,7 @@ end
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
 loop 記事数
@@ -505,6 +441,7 @@ end
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
 loop 1, 10
@@ -522,6 +459,7 @@ end
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
 loop
@@ -539,6 +477,7 @@ end
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
 break 条件
@@ -556,6 +495,7 @@ end
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
 par
@@ -573,6 +513,7 @@ end
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
 critical
@@ -582,11 +523,13 @@ end
 ```
 
 ### シーケンス図の参照
+
 ```
 ref over コントロール,エンティティ : 〇〇シーケンス図参照
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
 entity エンティティ
@@ -595,7 +538,6 @@ ref over コントロール,エンティティ : 〇〇シーケンス図参照
 @enduml
 ```
 
-
 ### 遅延
 
 ```
@@ -603,6 +545,7 @@ ref over コントロール,エンティティ : 〇〇シーケンス図参照
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
 ユーザー -> コントロール : メッセージ１
@@ -616,6 +559,7 @@ control コントロール
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
 ユーザー -> コントロール : メッセージ１
@@ -625,6 +569,7 @@ control コントロール
 ```
 
 ### インターバル
+
 :::warning
 一応定義出来るものの機能してないみたいだ。
 :::
@@ -634,6 +579,7 @@ control コントロール
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
 ユーザー -> コントロール : メッセージ１
@@ -651,11 +597,100 @@ control コントロール
 ```
 
 ```pumld
+@startuml
 actor ユーザー
 control コントロール
 ユーザー -> コントロール : メッセージ１
 ||50||
 ユーザー -> コントロール : メッセージ１
+@enduml
+```
+
+## ノート
+
+ノートを定義できます。
+
+### 左側
+
+```
+note left
+ノート
+end note
+```
+
+```pumld
+@startuml
+actor ユーザー
+control コントロール
+ユーザー -> コントロール : 同期メッセージ
+note left
+ノート
+end note
+@enduml
+```
+
+### 右側
+
+```
+note right
+ノート
+end note
+```
+
+```pumld
+@startuml
+actor ユーザー
+control コントロール
+ユーザー -> コントロール : 同期メッセージ
+note right
+ノート
+end note
+@enduml
+```
+
+### 上側
+
+:::warning
+一応定義出来るものの無視されてるみたいだ。
+:::
+
+```
+note top
+ノート
+end note
+```
+
+```pumld
+@startuml
+actor ユーザー
+control コントロール
+ユーザー -> コントロール : 同期メッセージ
+note top
+ノート
+end note
+@enduml
+```
+
+### 下側
+
+:::warning
+一応定義出来るものの無視されてるみたいだ。
+:::
+
+```
+note bottom
+ノート
+end note
+```
+
+```pumld
+@startuml
+actor ユーザー
+control コントロール
+ユーザー -> コントロール : 同期メッセージ
+note bottom
+ノート
+end note
 @enduml
 ```
 

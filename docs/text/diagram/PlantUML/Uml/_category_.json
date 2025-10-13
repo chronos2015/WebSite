@@ -1,0 +1,9 @@
+{
+  "label": "UML",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "slug": "/text/diagram/PlantUML/Uml",
+    "description": "PlantUMLで書ける図表のうち、UMLに関するものをまとめています。クラス図、シーケンス図、ユースケース図、アクティビティ図、コンポーネント図、配備図、状態遷移図、オブジェクト図などを解説します。"
+  }
+}

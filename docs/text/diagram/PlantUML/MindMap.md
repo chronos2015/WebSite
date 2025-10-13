@@ -105,6 +105,23 @@ caption キャプション
 @endmindmap
 ```
 
+#### すべて組み合わせると...
+
+```pumld
+@startmindmap
+title 新基盤構築計画
+header 新基盤構築計画
+footer フッタ
+caption キャプション
+* ルートノード
+** 子ノード1
+*** さらに下のノード
+** 子ノード2
+*** 別のノード
+@endmindmap
+```
+
+
 ## ルートノード
 
 ルートノードを定義できます。

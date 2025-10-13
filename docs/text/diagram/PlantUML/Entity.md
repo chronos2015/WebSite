@@ -117,6 +117,24 @@ product ||--o{ order_item : lists
 @enduml
 ```
 
+#### すべて組み合わせると...
+
+```pumld
+@startuml
+title 新基盤構築計画
+header 新基盤構築計画
+footer フッタ
+caption キャプション
+entity customer
+entity order
+entity product
+entity order_item
+customer ||--o{ order : places
+order ||--o{ order_item : contains
+product ||--o{ order_item : lists
+@enduml
+```
+
 ## エンティティ
 
 エンティティを定義できます。

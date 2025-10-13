@@ -46,8 +46,8 @@ title 新基盤構築計画
 [バックエンド] as BE
 [フロントエンド] as FE
 
-FE --> BE : HTTPリクエスト
-BE --> DB : SQLクエリ
+FE -r-> BE : HTTPリクエスト
+BE -r-> DB : SQLクエリ
 @enduml
 ```
 
@@ -66,8 +66,8 @@ header 新基盤構築計画
 [バックエンド] as BE
 [フロントエンド] as FE
 
-FE --> BE : HTTPリクエスト
-BE --> DB : SQLクエリ
+FE -r-> BE : HTTPリクエスト
+BE -r-> DB : SQLクエリ
 @enduml
 ```
 
@@ -86,8 +86,8 @@ footer フッタ
 [バックエンド] as BE
 [フロントエンド] as FE
 
-FE --> BE : HTTPリクエスト
-BE --> DB : SQLクエリ
+FE -r-> BE : HTTPリクエスト
+BE -r-> DB : SQLクエリ
 @enduml
 ```
 
@@ -106,8 +106,24 @@ caption キャプション
 [バックエンド] as BE
 [フロントエンド] as FE
 
-FE --> BE : HTTPリクエスト
-BE --> DB : SQLクエリ
+FE -r-> BE : HTTPリクエスト
+BE -r-> DB : SQLクエリ
+@enduml
+```
+
+#### すべて組み合わせると...
+
+```pumld
+title 新基盤構築計画
+header 新基盤構築計画
+footer フッタ
+caption キャプション
+[データベース] as DB
+[バックエンド] as BE
+[フロントエンド] as FE
+
+FE -r-> BE : HTTPリクエスト
+BE -r-> DB : SQLクエリ
 @enduml
 ```
 
@@ -216,6 +232,55 @@ package "パッケージ名" {
 [コンポーネントＡ]
 (インターフェイスＡ)
 [コンポーネントＡ] -- (インターフェイスＡ)
+@enduml
+```
+
+## 位置調整
+
+### 上
+
+```
+[コンポーネント] .u.> [コンポーネントUP]
+```
+
+```pumld
+@startuml
+[コンポーネント] .u.> [コンポーネントUP]
+@enduml
+```
+
+### 下
+
+```
+[コンポーネント] .d.> [コンポーネントDOWN]
+```
+
+```pumld
+@startuml
+[コンポーネント] .d.> [コンポーネントDOWN]
+@enduml
+```
+### 左
+
+```
+[コンポーネント] .l.> [コンポーネントLEFT]
+```
+
+```pumld
+@startuml
+[コンポーネント] .l.> [コンポーネントLEFT]
+@enduml
+```
+
+### 右
+
+```
+[コンポーネント] .r.> [コンポーネントRIGHT]
+```
+
+```pumld
+@startuml
+[コンポーネント] .r.> [コンポーネントRIGHT]
 @enduml
 ```
 

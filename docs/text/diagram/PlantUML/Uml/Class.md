@@ -68,6 +68,7 @@ abstract class Sample
 ```
 
 ## パッケージ
+
 ```
 package Sample
 ```
@@ -535,6 +536,23 @@ caption キャプション
 
 ```pumld
 @startuml
+caption キャプション
+class A
+class B
+class C
+
+A --|> B : extends
+A --> C : associates
+@enduml
+```
+
+#### すべて組み合わせると...
+
+```pumld
+@startuml
+title 新基盤構築計画
+header 新基盤構築計画
+footer フッタ
 caption キャプション
 class A
 class B
