@@ -48,23 +48,9 @@ sequenceDiagram
 
 ---
 
-## クラス図 (classDiagram)
+## クラス図 (Class Diagram)
 
 オブジェクト指向プログラミングにおけるクラス、属性、メソッド、およびそれらの関係を図示します。
-
-```
-classDiagram
-    class Animal{
-        +name: String
-        +age: int
-        +eat()
-    }
-    class Dog{
-        +breed: String
-        +bark()
-    }
-    Animal <|-- Dog
-```
 
 ```mermaid
 classDiagram
@@ -79,6 +65,8 @@ classDiagram
     }
     Animal <|-- Dog
 ```
+
+[詳細](/docs/text/diagram/Mermaid.js/Class)
 
 ---
 
