@@ -137,11 +137,11 @@ const config = {
                 label: 'Stack Overflow',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
 */
+              {
+                label: 'Blogger',
+                href: 'https://memorandum24.blogspot.com/',
+              },
               {
                 label: 'X',
                 href: 'https://x.com/contoso2024',
