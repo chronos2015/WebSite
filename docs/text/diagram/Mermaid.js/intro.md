@@ -6,6 +6,73 @@ title: mermaid.jsで記載できる全種類の図形とサンプル
 mermaid.jsでは、フローチャート、シーケンス図、クラス図、ステート図、ガントチャート、円グラフなど、さまざまな種類の図形を作成できます。<br />
 ここでは、mermaid.jsで記述できる主な図形の種類と、それぞれの簡単なサンプルコードをご紹介します。
 
+## クラス図 (Class Diagram)
+
+オブジェクト指向プログラミングにおけるクラス、属性、メソッド、およびそれらの関係を図示します。
+
+```mermaid
+classDiagram
+    class Animal{
+        +name: String
+        +age: int
+        +eat()
+    }
+    class Dog{
+        +breed: String
+        +bark()
+    }
+    Animal <|-- Dog
+```
+
+[詳細](/docs/text/diagram/Mermaid.js/Class)
+
+---
+
+## ER図 (Entity-Relationship Diagram)
+
+データベースのエンティティ（実体）、属性、およびそれらの関係を図示します。
+
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : has
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER {
+        string name
+        string email
+    }
+    ORDER {
+        int orderNumber
+        string shippingAddress
+    }
+    LINE-ITEM {
+        string productCode
+        int quantity
+    }
+```
+
+[詳細](/docs/text/diagram/Mermaid.js/Entity)
+
+---
+
+
+## シーケンス図 (Sequence Diagram)
+
+システムやプログラムのコンポーネント間で、メッセージがどのような順序でやりとりされるかを示します。
+
+```mermaid
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>Bob: こんにちは
+    activate Bob
+    Bob-->>Alice: こんにちは、Aliceさん
+    deactivate Bob
+```
+
+[詳細](/docs/text/diagram/Mermaid.js/Sequence)
+
+---
+
 ## フローチャート (flowchart)
 
 プロセスやタスクの流れを視覚的に表現するのに使われます。
@@ -27,46 +94,6 @@ graph TD
     C --> E[終了];
     D --> E;
 ```
-
----
-
-## シーケンス図 (Sequence Diagram)
-
-システムやプログラムのコンポーネント間で、メッセージがどのような順序でやりとりされるかを示します。
-
-```mermaid
-sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->>Bob: こんにちは
-    activate Bob
-    Bob-->>Alice: こんにちは、Aliceさん
-    deactivate Bob
-```
-
-[詳細](/docs/text/diagram/Mermaid.js/Sequence)
-
----
-
-## クラス図 (Class Diagram)
-
-オブジェクト指向プログラミングにおけるクラス、属性、メソッド、およびそれらの関係を図示します。
-
-```mermaid
-classDiagram
-    class Animal{
-        +name: String
-        +age: int
-        +eat()
-    }
-    class Dog{
-        +breed: String
-        +bark()
-    }
-    Animal <|-- Dog
-```
-
-[詳細](/docs/text/diagram/Mermaid.js/Class)
 
 ---
 
@@ -167,32 +194,6 @@ journey
       Go downstairs: 5: Me
       Sit down: 5: Me
 ```
-
----
-
-## ER図 (erDiagram)
-
-データベースのエンティティ（実体）、属性、およびそれらの関係を図示します。
-
-```mermaid
-erDiagram
-    CUSTOMER ||--o{ ORDER : has
-    ORDER ||--|{ LINE-ITEM : contains
-    CUSTOMER {
-        string name
-        string email
-    }
-    ORDER {
-        int orderNumber
-        string shippingAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-    }
-```
-
-[詳細](/docs/text/diagram/Mermaid.js/Entity)
 
 ---
 
@@ -774,9 +775,7 @@ xychart-beta
 
 ZenUML図は、UML（統一モデリング言語）のシーケンス図を、よりシンプルで直感的な構文で表現するための図です。
 :::warning
-
 理由は不明だが動作しない。
-
 :::
 
 -----

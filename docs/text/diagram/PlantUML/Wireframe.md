@@ -398,15 +398,6 @@ some long text or somethings
 @endsalt
 ```
 
-
-```pumld
-@startsalt
-{
- 進捗状況 {.----}
-}
-@endsalt
-```
-
 ## ノート
 
 :::danger
@@ -424,4 +415,3 @@ some long text or somethings
 注意: ただし、行頭以外に`/*`を置いた場合にブロックコメントとして認識されないようです。<br />
 また行の途中で`*/`を記載してもその行の最後までブロックコメントとして処理されるようです。
 :::
-
