@@ -177,7 +177,7 @@ entity customer {
 ```pumld
 @startuml
 entity customer {
-    + column1
+    + column1 [PK]
 }
 @enduml
 ```
@@ -191,7 +191,7 @@ entity customer {
 ```pumld
 @startuml
 entity customer {
-    + column1
+    + column1 [PK]
     __
     # column2
 }
@@ -207,7 +207,7 @@ entity customer {
 ```pumld
 @startuml
 entity customer {
-    + column1
+    + column1 [PK]
     __
     * column2
 }

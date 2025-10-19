@@ -174,24 +174,6 @@ journey
 
 データベースのエンティティ（実体）、属性、およびそれらの関係を図示します。
 
-```
-erDiagram
-    CUSTOMER ||--o{ ORDER : has
-    ORDER ||--|{ LINE-ITEM : contains
-    CUSTOMER {
-        string name
-        string email
-    }
-    ORDER {
-        int orderNumber
-        string shippingAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-    }
-```
-
 ```mermaid
 erDiagram
     CUSTOMER ||--o{ ORDER : has
@@ -209,6 +191,8 @@ erDiagram
         int quantity
     }
 ```
+
+[詳細](/docs/text/diagram/Mermaid.js/Entity)
 
 ---
 
